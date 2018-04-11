@@ -1,0 +1,19 @@
+doctype html
+html(lang="en")
+  head
+    title= pageTitle
+    link(rel="stylesheet", href="./css/app.css")
+    script(type='text/javascript').
+      if (foo) bar(1 + 5)
+  body
+    h1 Pug - node template engine
+    include block/menu.pug
+    
+    include block/home.pug
+    include block/otro.pug
+
+    include block/aside.pug
+    
+    include block/footer.pug
+
+  script(src="./js/bundle.js")
